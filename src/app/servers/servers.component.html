@@ -1,0 +1,17 @@
+<button class="btn btn-primary" [hidden]="!allowNewServer" (click)="toggleDisplay()">
+    Add Server
+</button>
+
+{{ allowNewServer }}
+
+
+<div [hidden]="isShow">
+    <app-server></app-server>
+</div>
+
+{{ isShow }}
+
+<p [innerText]="isShow"></p>
+
+<hr>
+<app-server></app-server>
